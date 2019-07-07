@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Stretch-Break Reminder",
+    "version": "1.0",
+
+    "description": "Take a break, for your body's sake",
+
+
+    "author": "Ningsong Shen",
+
+    "background": {  
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+
+    "permissions": ["notifications"]
+}
