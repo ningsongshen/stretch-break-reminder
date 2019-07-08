@@ -40,5 +40,5 @@ chrome.runtime.onStartup.addListener(function() {
 
 chrome.tabs.onRemoved.addListener(function() {
     console.log("tab closed");
-    checkTime(timeZero, 1000);
+    checkTime(timeZero, 1800000);
 });
