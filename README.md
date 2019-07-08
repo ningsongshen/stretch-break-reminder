@@ -14,3 +14,7 @@ Reminders to take a break during long computer work periods (with stretch ideas!
 ## Technologies
 
 I think I will be using Google Chrome Extensions, cause Windows apps are heavy and complicated.
+
+## Design
+
+For the preliminary build, the app will only remind you when you close a tab. This is to reduce the chances of breaking your thought process. Also, it will make development easier.
