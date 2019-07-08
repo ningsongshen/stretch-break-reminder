@@ -5,7 +5,7 @@ chrome.runtime.onInstalled.addListener(function() {
         message: "Current Interval: 30 minutes",
         iconUrl: "icon.png"
     }
-    var asdf = chrome.notifications.create("Take a break!", notification);
+    var asdf = chrome.notifications.create("welcome", notification);
 
 });
 
@@ -40,5 +40,5 @@ chrome.runtime.onStartup.addListener(function() {
 
 chrome.tabs.onRemoved.addListener(function() {
     console.log("tab closed");
-    checkTime(timeZero, 1800000);
+    checkTime(timeZero, 1000);
 });
