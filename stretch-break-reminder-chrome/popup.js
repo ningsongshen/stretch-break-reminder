@@ -1,1 +1,2 @@
-let enabled = document.getElementById('enabled');
+let reminderToggle = document.getElementById('reminderToggle');
+let changeInterval = document.getElementById('change');

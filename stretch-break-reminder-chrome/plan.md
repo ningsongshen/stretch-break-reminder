@@ -10,24 +10,25 @@ Getting started: <https://developer.chrome.com/extensions/getstarted>
 
 ## Next Steps
 
-- try out update notification when reminding instead of creating a new notification
+- [x] try out update notification when reminding instead of creating a new notification
 
-- Implement interval time change on the options page
+- [ ] Implement interval time change on the options page
 
-- disable button from icon in menu
+- [ ] disable button from icon in menu
 
-- reorganize the time zero global variable, i don't really like it's implementation
+- [ ] reorganize the time zero global variable, i don't really like it's implementation
 
-- unit tests
+- [ ] unit tests
 
-- randomized stretch tips (with pictures!) or custom messages
+- [ ] randomized stretch tips (with pictures!) or custom messages
 
-- do something when the user clicks notification, or add a button!, like change settings
-- add icon
+- [ ] do something when the user clicks notification, or add a button!, like change settings
 
-- publish to chrome store
+- [ ] add icon
 
-- microsoft edge, windows native apps
+- [ ] publish to chrome store
+
+- [ ] microsoft edge, windows native apps
 
 ## Selling Points
 
