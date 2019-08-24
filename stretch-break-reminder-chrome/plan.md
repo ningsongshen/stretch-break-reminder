@@ -12,7 +12,7 @@ Getting started: <https://developer.chrome.com/extensions/getstarted>
 
 - [x] try out update notification when reminding instead of creating a new notification
 
-- [ ] Implement interval time change on the options page
+- [ ] Implement interval time change on the options page (requires storage and transfer between functions)
 
 - [ ] disable button from icon in menu
 
