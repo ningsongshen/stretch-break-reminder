@@ -1,17 +1,26 @@
-// Set the interval between breaks
-var breakIntervalInMinutes = 1;
-
-
-// Run the welcome notification: you're getting break notifications now!
+// On installation, run the welcome notification: you're getting break notifications now!
 chrome.runtime.onInstalled.addListener(function() {
-    var notification = {
-        type: "basic",
-        title: "You are now getting stretch-break reminders.",
-        message: `Current Interval: ${breakIntervalInMinutes} minutes`,
-        iconUrl: "img/extension_icon128.png"
-    }
-    var asdf = chrome.notifications.create("welcome", notification);
+    // set the settings on installation
+    chrome.storage.sync.set({interval: 0.25});
+    chrome.storage.sync.set({on: 1});
+
+    breakIntervalInMinutes = chrome.storage.sync.get('interval', function(data) {
+        console.log("set break interval for first time: ", data.interval);
+        return data.interval;
+    });
+    // intro notification
+    chrome.storage.sync.get('interval', function(data) {
+        var notification = {
+            type: "basic",
+            title: "You are now getting stretch-break reminders.",
+            message: `Current Interval: ${data.interval} minutes`,
+            iconUrl: "img/extension_icon128.png"
+        };
+        chrome.notifications.create("welcome", notification);
+    });
+
     setTimeout(
+        // so that the notification disappears on its own, no action required
         function() { chrome.notifications.clear("welcome") },
         5000
     );
@@ -37,9 +46,11 @@ function checkTime(initialTime, workTime) {
             iconUrl: "img/extension_icon128.png"
         }
         chrome.notifications.create("Take a break!", notification);
-        console.log("Timer reset");
+        console.log("timer reset");
         restartTimer();
+
         setTimeout(
+            // no user interaction required, make this a choice!
             function() { chrome.notifications.clear("Take a break!") },
             5000
         );
@@ -54,6 +65,11 @@ chrome.runtime.onStartup.addListener(function() {
 
 // Only run the break time check on tab close
 chrome.tabs.onRemoved.addListener(function() {
-    console.log("tab closed");
-    checkTime(timeZero, breakIntervalInMinutes*60000);
+    chrome.storage.sync.get(['on', 'interval'], function(data) {
+        if (data.on == 1) {
+            console.log("tab closed");
+            checkTime(timeZero, data.interval * 60000);
+        }
+
+    });
 });
