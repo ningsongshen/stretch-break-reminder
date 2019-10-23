@@ -2,19 +2,22 @@
 
 Reminders to take a break during long computer work periods (with stretch ideas!)
 
-## Steps to the goal
+## About Program
 
-1. Create a windows program the displays a notification
-2. Make the program display the notification at a specified time.
-3. Make the program display a notification at set intervals.
-4. Show useful messages on the notification
-5. Add a nice interface for customizations.
-6. Ship on the Microsoft Store.
+This is a chrome extension that reminds you to take a break during those busy days! Often, our minds are so focussed on a task that we simply forget to get up and take a break. A simple visual cue is sometimes all that is needed.
 
-## Technologies
+## Features
 
-I think I will be using Google Chrome Extensions, cause Windows apps are heavy and complicated.
+- Set reminder interval times
+- Easy toggle on/off the reminders
+- Break reminders only on tab close, so that work is not interrupted and thought process is not broken
+- Simple, no-fuss interface
+- Friendly messages and stretch ideas on reminder
 
-## Design
+## Dev Info
 
-For the preliminary build, the app will only remind you when you close a tab. This is to reduce the chances of breaking your thought process. Also, it will make development easier.
+Ningsong Shen, last updated Oct. 2019
+
+## Support and Contribution
+
+Get in touch! Open to collaboration
