@@ -14,17 +14,17 @@ Getting started: <https://developer.chrome.com/extensions/getstarted>
 
 - [ ] Implement interval time change on the options page (requires storage and transfer between functions)
 
-- [ ] disable button from icon in menu
+- [x] disable button from icon in menu
 
-- [ ] reorganize the time zero global variable, i don't really like it's implementation
+- [x] reorganize the time zero global variable, i don't really like it's implementation
 
 - [ ] unit tests
 
 - [ ] randomized stretch tips (with pictures!) or custom messages
 
-- [ ] do something when the user clicks notification, or add a button!, like change settings
+- [x] do something when the user clicks notification, or add a button!, like change settings
 
-- [ ] add icon
+- [X] add icon
 
 - [ ] publish to chrome store
 

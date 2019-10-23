@@ -13,6 +13,8 @@ This is a chrome extension that reminds you to take a break during those busy da
 - Break reminders only on tab close, so that work is not interrupted and thought process is not broken
 - Simple, no-fuss interface
 - Friendly messages and stretch ideas on reminder
+- Doesn't clog up your notification centre with messages for every break
+- coming soon: statistics page!
 
 ## Dev Info
 
